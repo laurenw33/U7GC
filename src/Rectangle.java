@@ -64,15 +64,9 @@ public class Rectangle {
             if (compareX + compareLen < x2 && compareX + compareLen > x1){
                 return true;
             }
-            else if (compareX < x2 && compareX > x1){
-                return true;
-            }
         }
         else if (compareY + compareWid < y4 && compareY + compareWid > y1){
             if (compareX + compareLen < x2 && compareX + compareLen > x1){
-                return true;
-            }
-            else if (compareX < x2 && compareX > x1){
                 return true;
             }
         }

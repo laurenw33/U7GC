@@ -7,10 +7,10 @@ public class Main {
         ArrayList<Rectangle> listOfRect = new ArrayList<>();
 
         for (int i = 0; i < 1000000; i++) {
-            int len = (int) (Math.random() * 50);
-            int width = (int) (Math.random() * 50);
-            int x = (int) (Math.random() * (50 - 10 + 1) + 10);
-            int y = (int) (Math.random() * (50 - 10 + 1) + 10);
+            int len = (int) (Math.random() * (50 - 10 + 1) + 10);
+            int width = (int) (Math.random() * (6) + 5);
+            int x = (int) (Math.random() * (50) + 1);
+            int y = (int) (Math.random() * (50) + 1);
 
             Rectangle temp = new Rectangle(len, width, x, y);
             listOfRect.add(temp);
@@ -19,7 +19,6 @@ public class Main {
         int count = 0;
         original.getOriginal(original);
         for (Rectangle rec : listOfRect) {
-            System.out.println(original.isColliding(original, rec));
             if (original.isColliding(original, rec)){
                 count++;
             }
